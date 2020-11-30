@@ -1,0 +1,290 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#Envoltura{
+	background-color: white;
+	margin-top: -16px;
+	width: 100%;
+	height: 100%;
+	display: block;
+
+
+}
+
+#Encabezado-inf{
+	background-color: #1D1D1D;
+	height: 50px;
+	color:white;
+}
+.Contacto{
+    padding-left: 100px;
+    width: 320px;
+    display: inline-block;
+
+}
+.opciones-categoria{
+	display: inline-block;
+	padding: 10px;
+	font-family:"arial";
+}
+.opciones-categoria a{
+	text-decoration: none;
+	color: white;
+	font-family: "arial";
+}
+.icon-redsocial{
+	width: 15px;
+	height: 15px;
+}
+
+#Encabezado-2{
+
+	background-color: #1765BE;
+	height: 100px;
+	color:white;
+
+}
+.Contenido-encabezado2{
+    width: 500px;
+	margin-top: -70px;
+	float: right;
+	margin-right: 44.5%;
+}
+.opciones-en2{
+	display: inline-block;
+	padding: 5px;
+	font-family:"arial";
+}
+.opciones-en2 a{
+
+	text-decoration: none;
+	color: white;
+	font-family: "arial";
+}
+#Logo{
+    padding-left: 13%;
+    width: 20%;
+
+}
+#logo-empresa{
+	margin-top: 10px;
+	width: 80px;
+	height: 80px;
+}
+#compras{
+	width: 30%;
+	margin-top: -78px;
+	float: right;
+	margin-right: 15%; 
+}
+.opciones-compra{
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px;
+	font-family:"arial";
+}
+.opciones-compra a{
+	text-decoration:none;
+	color: white;
+}
+.searchbar{
+	display: inline-block;
+	padding: 5px;
+	font-family:"arial";
+	color: white;
+
+}
+#i-searchbar{
+
+	height:25px;
+	border-radius: 5px;
+	background-color: #4990DF;
+	color: white;
+	border:none;
+	outline: none;
+	text-indent: 10px;
+}
+#i-searchbar::placeholder{
+	color:rgb(255, 255, 255,.5);
+}
+#shopping-icon{
+	width: 15px;
+	height: 15px;
+}
+#envoltura-Paso1{
+
+	height: 300px;
+	width: 60%;
+	margin-left: 15%;
+	border: 1px #DDDDDD solid;
+	margin-top: 2%;
+	transition: 1s;
+	overflow-y: hidden;
+}
+.Paso1{
+	background-color: #F5F5F5;
+	margin-top: -1.5%;
+
+}
+.Paso1-head{
+	height: 50px;
+	border-bottom:  1px #DDDDDD solid;
+
+}
+.Paso1 h1{
+	display: block;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 22px;
+	color: #666;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+.Paso1 span{
+	color: white;
+	display: inline-block;
+	background-color: #AAAAAA;
+	padding: 5px 15px;
+}
+#img-amd{
+	display: block;
+	width: 170px;
+	height: 170px;
+	margin-left:25% ;
+	margin-top: 5%;
+}
+.img-p{
+	width: 170px;
+	height: 170px;
+}
+#imagen-procesadores{
+	display: flex;
+	flex-wrap: wrap;
+	transition: 0.4s;
+
+}
+#img-intel{
+	margin-top:5%; 
+	width: 170px;
+	height: 170px;
+	margin-left:40px;
+}
+
+/*Estilos para los procesadores*/
+#envoltura-Paso2{
+	height: 50px;
+	width: 60%;
+	margin-left: 15%;
+	border: 1px #DDDDDD solid;
+	margin-top: 0.5%;
+	transition: 1s;
+	overflow-y: hidden;
+}
+
+#imagen-procesadores-amd{
+	display: flex;
+	flex-wrap: wrap;
+	transition: 0.4s;
+	visibility: hidden;
+
+}
+#imagen-procesadores-intel{
+	display: flex;
+	flex-wrap: wrap;
+	transition: 0.4s;
+	visibility: hidden;
+
+}
+.productos-lista{
+	display: flex;
+	flex-wrap: wrap;
+}
+#Producto-1{
+	width: 200px;
+	margin-left: 40px;
+	margin-top: 50px;
+
+}
+.image-product{
+	width: 200px;
+	height: 200px;
+}
+.descripcion-producto{
+	text-decoration:none;
+	font-family: "Impact";
+	font-size: 14px;
+	color: #555;
+}
+.precio{
+	color:#3498db;
+	font-family: "Franklin Gothic Heavy"
+}
+
+/*Envoltura para los Pasos*/
+.All-P{
+	height: 50px;
+	width: 60%;
+	margin-left: 15%;
+	border: 1px #DDDDDD solid;
+	margin-top: 0.5%;
+	transition: 1s;
+	overflow-y: hidden;
+}
+
+#pie_de_pagina{
+	margin-top: 9%;
+	background-color: #202020;
+	height: 300px;
+	color: white;
+	font-family: "arial";
+}
+#pie_de_pagina{
+	margin-top: 9%;
+	background-color: #202020;
+	height: 300px;
+	color: white;
+	font-family: "arial";
+	padding: 1px;
+}
+#Derechos-reservados-logo{
+	width: 60px;
+	height: auto;
+	margin:0 auto;/* Sirve para centrarlo*/
+	margin-top: -10%;
+}
+#logo-pie-de-pagina{
+	width: 60px;
+	height: 60px;
+}
+#texto-derechos-reservados{
+	margin-left: 46%;
+	font-family: "arial";
+	font-size: 12px;
+	color: #cecece;
+}
+#lista-footer{
+	width: 300px;
+	margin-top: 4%;
+	margin-left: 5%;
+	
+}
+
+.opciones-footer{
+	margin-top: 10px;
+	height: 30px;
+	border-bottom: 1px #292929 solid;
+	color:#666; /*Añade el color de los puntos de la lista*/
+}
+.opciones-footer a{
+	display: block;
+	height: 30px;
+	text-decoration: none;
+	color: #666;  /*añade el color del texto*/
+	font-size: 12px;
+}
+#Procesadores-de-pago{
+	margin-top: 5%;
+}
+#Procesadores-de-pago img{
+	margin-left: 23%;
+}

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>CyberWindows</title>
+	<link rel="stylesheet" type="text/css" href="StyleCW.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- <script type="text/javascript">
+		$(document).ready(function(){
+
+			var native_width = 0;
+			var native_height = 0;
+
+			//Now the mousemove function
+			$(".E-C").mousemove(function(e){
+				//When the user hovers on the image, the script will first calculate
+				//the native dimensions if they don't exist. Only after the native dimensions
+				//are available, the script will show the zoomed version.
+				if(!native_width && !native_height)
+				{
+					//This will create a new image object with the same image as that in .small
+					//We cannot directly get the dimensions from .small because of the 
+					//width specified to 200px in the html. To get the actual dimensions we have
+					//created this image object.
+					var image_object = new Image();
+					image_object.src = $(".image-product").attr("src");
+					
+					//This code is wrapped in the .load function which is important.
+					//width and height of the object would return 0 if accessed before 
+					//the image gets loaded.
+					native_width = image_object.width;
+					native_height = image_object.height;
+				}
+				else
+				{
+					//x/y coordinates of the mouse
+					//This is the position of .magnify with respect to the document.
+					var magnify_offset = $(this).offset();
+					//We will deduct the positions of .magnify from the mouse positions with
+					//respect to the document to get the mouse positions with respect to the 
+					//container(.magnify)
+					var mx = e.pageX - magnify_offset.left;
+					var my = e.pageY - magnify_offset.top;
+					
+					//Finally the code to fade out the glass if the mouse is outside the container
+					if(mx < $(this).width() && my < $(this).height() && mx > 0 && my > 0)
+					{
+						$(".lupa").fadeIn(100);
+					}
+					else
+					{
+						$(".lupa").fadeOut(100);
+					}
+					if($(".lupa").is(":visible"))
+					{
+						//The background position of .large will be changed according to the position
+						//of the mouse over the .small image. So we will get the ratio of the pixel
+						//under the mouse pointer with respect to the image and use that to position the 
+						//large image inside the magnifying glass
+						var rx = Math.round(mx/$(".image-product").width()*native_width - $(".lupa").width()/2)*-1;
+						var ry = Math.round(my/$(".image-product").height()*native_height - $(".lupa").height()/2)*-1;
+						var bgp = rx + "px " + ry + "px";
+						
+						//Time to move the magnifying glass with the mouse
+						var px = mx - $(".lupa").width()/2;
+						var py = my - $(".lupa").height()/2;
+						//Now the glass moves with the mouse
+						//The logic is to deduct half of the glass's width and height from the 
+						//mouse coordinates to place it with its center at the mouse coordinates
+						
+						//If you hover on the image now, you should see the magnifying glass in action
+						$(".lupa").css({left: px, top: py, backgroundPosition: bgp});
+					}
+				}
+			})
+		})
+	</script> -->
+</head>
+<body>
+	<div class="lupa">
+		
+	</div>
+	<div id="Envoltura" class="E-C">
+		<div id="Encabezado-inf">
+			<div class="Contacto" ><!-- Envolvera a la lista, para que puedan acomodarse en forma horizontal -->
+				<ul>
+					<li class="opciones-categoria">
+						<a href="">Nosotros</a>
+					</li>
+					<li class="opciones-categoria">|</li>
+					<li class="opciones-categoria">
+						<a href="">Contacto</a>
+					</li>
+
+					
+				</ul>
+			</div>
+			<div class="Contacto">
+				<ul id="centro">
+					<li class="opciones-categoria">
+						<a href=""><img class="icon-redsocial" src="imagenes/facebook.png"></a>
+					</li>
+					<li class="opciones-categoria">
+						<a href=""><img class="icon-redsocial" src="imagenes/twitter.png"></a>
+					</li>
+					<li class="opciones-categoria">
+						<a href=""><img class="icon-redsocial" src="imagenes/youtube.png"></a>
+					</li>
+					<li class="opciones-categoria">|</li>
+					<li class="opciones-categoria">
+						<img class="icon-redsocial" src="imagenes/phone.png">(77)23459713
+
+					</li>
+
+					
+				</ul>
+			</div>
+			<div class="Contacto">
+				<ul>
+					<li class="opciones-categoria">
+						<a href="">Iniciar Sesión</a>
+					</li>
+					<li class="opciones-categoria">|</li>
+					<li class="opciones-categoria">
+						<a href="">Registrarse</a>
+					</li>
+
+					
+				</ul>
+			</div>
+		</div>
+		<!-- Encabezado 2 donde se muestra las opciones de los productos, tiendas -->
+		<div id="Encabezado-2">
+			<div id="Logo">
+				<a href="index.html"><img id="logo-empresa" src="imagenes/cyberwindows.png"></a>
+				
+			</div>
+			<div class="Contenido-encabezado2">
+				<ul>
+					<li class="opciones-en2">|</li>
+					<li class="opciones-en2">
+						<a href="Productos.html">Productos</a>
+					</li>
+					<li class="opciones-en2">|</li>
+					<li class="opciones-en2">
+						<a href="">Tienda</a>
+					</li>
+					<li class="opciones-en2">|</li>
+					<li class="opciones-en2">
+						<a href="Configurar_pc.html">Configurar PC</a>
+					</li>
+					<li class="opciones-en2">|</li>
+					<li class="opciones-en2">
+						<a href="">Ofertas</a>
+					</li>
+					
+
+				</ul>
+			</div>
+			<div id="compras">
+				<ul>
+					<li class="searchbar">
+						<input id="i-searchbar" type="text" name="" placeholder="Buscar..." >
+					</li>
+					<li class="opciones-compra">
+						<a href=""> 0 <img id="shopping-icon" src="imagenes/shopping.png"> </a>
+					</li>
+					<li class="opciones-compra">|</li>
+					<li class="opciones-compra">
+						Comprar
+					</li>
+				</ul>
+				
+			</div>
+			
+		</div>
+
+		<div id="Envoltura-contenido">
+			<div id="Categorias">
+				<ul>
+					<li class="categorias" id="top">
+						<div>
+							<img id="menu-icon" src="imagenes/menu.png"> <span>CATEGORIAS</span> 
+						</div>
+						
+						
+					</li>
+					<li class="categorias">
+						<a href="Accesorios.html"> <img id="mouse-icon" src="imagenes/Mouse.png"><span class="text-categoria">ACCESORIOS</span> </a>
+					</li>
+					<li class="categorias">
+						<a href="Audio.html"> <img id="audio-icon" src="imagenes/Audio.png"><span class="text-categoria-A">AUDIO</span> </a>
+					</li>
+					<li class="categorias">
+						<a href="Computadoras.html"> <img id="audio-icon" src="imagenes/Computadora.png"><span class="text-categoria-C">COMPUTADORAS</span> </a>
+					</li>
+					<li class="categorias">
+						<a href="Software.html"> <img id="audio-icon" src="imagenes/Software.png"><span class="text-categoria-S">SOFTWARE</span> </a>
+					</li>
+					<li class="categorias">
+						<a href="Componentes.html"> <img id="audio-icon" src="imagenes/Componentes.png"><span class="text-categoria-C">COMPONENTES</span> </a>
+					</li>
+					<li class="categorias">
+						<a href="Servicios.html"> <img id="audio-icon" src="imagenes/Servicios.png"><span class="text-categoria-S">SERVICIOS</span> </a>
+					</li>
+
+				</ul>
+				
+			</div>
+			<div id="Productos-destacados">
+				<p id="texto-destacados">PRODUCTOS DESTACADOS</p>
+			</div>
+			<!-- LISTA DE LOS PRODUCTOS DESTACADOS DE LA PAGINA -->
+
+			<div id="Productos-I">
+				<div id="Producto-1">
+				
+					<a class="descripcion-producto" href=""><img class="image-product" src="imagenes/Procesador1.jpg"> Procesador AMD Ryzen 5 5600X / 6 Core / 12 Thread / 3.7GHz / 4.6GHz Boost / TDP 65W / Wraith Stealth / (Requiere Tarjeta de Video) / 100-100000065BOX</a>
+					<p class="precio">$7,100.00 MXN</p>
+
+					<ul class="e-ul">
+						<li class="obj-cantidad">
+							<p class="texto-cantidad">Cantidad:</p>
+						</li>
+						<li class="obj-cantidad">
+							<input class="cantidad-numero" type="number" name="" min="1" max="100">
+						</li>
+					</ul>
+					<button id="button-add">
+						Agregar
+					</button>
+						
+				</div>
+				<div id="Producto-1">
+				
+					<a class="descripcion-producto" href=""><img class="image-product" src="imagenes/MOB1.jpg"> Tarjeta Madre Gigabyte H310M M.2 2.0 Intel H310 Micro ATX </a>
+					<p class="precio">$1,275.00 MXN</p>
+
+					<ul class="e-ul">
+						<li class="obj-cantidad">
+							<p class="texto-cantidad">Cantidad:</p>
+						</li>
+						<li class="obj-cantidad">
+							<input class="cantidad-numero" type="number" name="" min="1" max="100">
+						</li>
+					</ul>
+					<button id="button-add">
+						Agregar
+					</button>
+
+				</div>
+				<div id="Producto-1">
+				
+					<a class="descripcion-producto" href=""><img class="image-product" src="imagenes/Grafica1.jpg"> Tarjeta de Video Nvidia GeForce RTX 3070 8GB / MSI VENTUS 2X OC / 912-V390-008 - Solo 1 por cliente </a>
+					<p class="precio">$15,000.00 MXN</p>
+
+					<ul class="e-ul">
+						<li class="obj-cantidad">
+							<p class="texto-cantidad">Cantidad:</p>
+						</li>
+						<li class="obj-cantidad">
+							<input class="cantidad-numero" type="number" name="" min="1" max="100">
+						</li>
+					</ul>
+					<button id="button-add">
+						Agregar
+					</button>
+
+				</div>
+				<div id="Producto-1">
+				
+					<a class="descripcion-producto" href=""><img class="image-product" src="imagenes/RAM1.jpg"> Memoria RAM DDR4 16GB 3000MHz Corsair Vengeance RGB PRO 2x8GB / Negras </a>
+					<p class="precio">$3,430.00 MXN</p>
+
+					<ul class="e-ul">
+						<li class="obj-cantidad">
+							<p class="texto-cantidad">Cantidad:</p>
+						</li>
+						<li class="obj-cantidad">
+							<input class="cantidad-numero" type="number" name="" min="1" max="100">
+						</li>
+					</ul>
+					<button id="button-add">
+						Agregar
+					</button>
+
+				</div>
+				<div id="Producto-1">
+				
+					<a class="descripcion-producto" href=""><img class="image-product" src="imagenes/Control1.jpg"> Joycon Grips Verbatim para Nintendo Switch - VB99798 </a>
+					<p class="precio">$179.00 MXN</p>
+
+					<ul class="e-ul">
+						<li class="obj-cantidad">
+							<p class="texto-cantidad">Cantidad:</p>
+						</li>
+						<li class="obj-cantidad">
+							<input class="cantidad-numero" type="number" name="" min="1" max="100">
+						</li>
+					</ul>
+					<button id="button-add">
+						Agregar
+					</button>
+
+				</div>
+				<div id="Producto-1">
+				
+					<a class="descripcion-producto" href=""><img class="image-product" src="imagenes/Disipador1.jpg"> Disipador para CPU Aerocool Mirage 5 ARGB Intel y AMD </a>
+					<p class="precio">$678.00 MXN</p>
+
+					<ul class="e-ul">
+						<li class="obj-cantidad">
+							<p class="texto-cantidad">Cantidad:</p>
+						</li>
+						<li class="obj-cantidad">
+							<input class="cantidad-numero" type="number" name="" min="1" max="100">
+						</li>
+					</ul>
+					<button id="button-add">
+						Agregar
+					</button>
+
+				</div>
+				<div id="Producto-1">
+				
+					<a class="descripcion-producto" href=""><img class="image-product" src="imagenes/Gabinete1.jpg"> Gabinete Piramide AZZA CSAZ-804V Pyramid / Cristal Templado / RGB Digital / USB 3.0 / Audio HD / 1 Ventilador RGB </a>
+					<p class="precio">$6,128.00 MXN</p>
+
+					<ul class="e-ul">
+						<li class="obj-cantidad">
+							<p class="texto-cantidad">Cantidad:</p>
+						</li>
+						<li class="obj-cantidad">
+							<input class="cantidad-numero" type="number" name="" min="1" max="100">
+						</li>
+					</ul>
+					<button id="button-add">
+						Agregar
+					</button>
+
+				</div>
+				<div id="Producto-1">
+				
+					<a class="descripcion-producto" href=""><img class="image-product" src="imagenes/Pasta.jpg"> Pasta Térmica Cooler Master Mastergel Maker New Edition / MGZ-NDSG-N15M-R2</a>
+					<p class="precio">$234.00 MXN</p>
+
+					<ul class="e-ul">
+						<li class="obj-cantidad">
+							<p class="texto-cantidad">Cantidad:</p>
+						</li>
+						<li class="obj-cantidad">
+							<input class="cantidad-numero" type="number" name="" min="1" max="100">
+						</li>
+					</ul>
+					<button id="button-add">
+						Agregar
+					</button>
+
+				</div>
+				<div id="Producto-1">
+				
+					<a class="descripcion-producto" href=""><img class="image-product" src="imagenes/Grafica2.jpg"> Tarjeta de Video Nvidia GeForce GT 710 / 2GB DDR5 / Zotac Zone Edition / ZT-71307-20L</a>
+					<p class="precio">$1,050.00 MXN</p>
+
+					<ul class="e-ul">
+						<li class="obj-cantidad">
+							<p class="texto-cantidad">Cantidad:</p>
+						</li>
+						<li class="obj-cantidad">
+							<input class="cantidad-numero" type="number" name="" min="1" max="100">
+						</li>
+					</ul>
+					<button id="button-add">
+						Agregar
+					</button>
+
+				</div>
+				<div id="Producto-1">
+				
+					<a class="descripcion-producto" href=""><img class="image-product" src="imagenes/Procesador2.jpg"> Procesador Intel Core i9-10900KF 3.70GHz / 5.30GHz / 10 Nucleos / 20 Hilos / Socket LGA1200 / Requiere disipador de calor / Intel 10TH Generación - BX8070110900KF</a>
+					<p class="precio">$11,326.00 MXN</p>
+
+					<ul class="e-ul">
+						<li class="obj-cantidad">
+							<p class="texto-cantidad">Cantidad:</p>
+						</li>
+						<li class="obj-cantidad">
+							<input class="cantidad-numero" type="number" name="" min="1" max="100">
+						</li>
+					</ul>
+					<button id="button-add">
+						Agregar
+					</button>
+
+				</div>
+				<div id="Producto-1">
+				
+					<a class="descripcion-producto" href=""><img class="image-product" src="imagenes/SSD1.jpg"> Unidad de estado solido SSD 120GB 2.5" SATA3 Kingston A400 / SA400S37/120G</a>
+					<p class="precio">$468.00 MXN</p>
+
+					<ul class="e-ul">
+						<li class="obj-cantidad">
+							<p class="texto-cantidad">Cantidad:</p>
+						</li>
+						<li class="obj-cantidad">
+							<input class="cantidad-numero" type="number" name="" min="1" max="100">
+						</li>
+					</ul>
+					<button id="button-add">
+						Agregar
+					</button>
+
+				</div>
+			</div>
+		</div>
+		<!-- Pie de Pagina -->
+		<div id="pie_de_pagina">
+			<div id="lista-footer">
+				<ul>
+					<li class="opciones-footer"> <a href="">Aviso Legal</a></li>
+					<li class="opciones-footer"> <a href="">Configurar</a></li>
+					<li class="opciones-footer"> <a href="">Nosotros</a></li>
+					<li class="opciones-footer"><a href="">Contacto</a></li>
+				</ul>
+			</div>
+			<div id="Derechos-reservados-logo">
+				<img id="logo-pie-de-pagina" src="Imagenes/cyberwindows.png">
+				
+			</div>
+			<p id="texto-derechos-reservados">
+			 	CyberWindows &copy; 2020
+			</p>
+			<div id="Procesadores-de-pago">
+				<img src="Imagenes/Pagos.png">
+			</div>
+			
+	    </div>
+	</div>
+
+
+
+
+</body>
+</html>

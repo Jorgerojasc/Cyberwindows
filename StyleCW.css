@@ -1,0 +1,343 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#Envoltura{
+	margin-top: -16px;
+	width: 100%;
+	height: 160%;
+	display: block;
+
+
+}
+
+#Encabezado-inf{
+	background-color: #1D1D1D;
+	height: 50px;
+	color:white;
+}
+.Contacto{
+    padding-left: 100px;
+    width: 320px;
+    display: inline-block;
+
+}
+.opciones-categoria{
+	display: inline-block;
+	padding: 10px;
+	font-family:"arial";
+}
+.opciones-categoria a{
+	text-decoration: none;
+	color: white;
+	font-family: "arial";
+}
+.icon-redsocial{
+	width: 15px;
+	height: 15px;
+}
+
+#Encabezado-2{
+
+	background-color: #1765BE;
+	height: 100px;
+	color:white;
+
+}
+.Contenido-encabezado2{
+    width: 500px;
+	margin-top: -70px;
+	float: right;
+	margin-right: 44.5%;
+}
+.opciones-en2{
+	display: inline-block;
+	padding: 5px;
+	font-family:"arial";
+}
+.opciones-en2 a{
+
+	text-decoration: none;
+	color: white;
+	font-family: "arial";
+}
+#Logo{
+    padding-left: 15%;
+    width: 20%;
+
+}
+#logo-empresa{
+	margin-top: 10px;
+	width: 80px;
+	height: 80px;
+}
+#compras{
+	width: 30%;
+	margin-top: -78px;
+	float: right;
+	margin-right: 15%; 
+}
+.opciones-compra{
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px;
+	font-family:"arial";
+}
+.opciones-compra a{
+	text-decoration:none;
+	color: white;
+}
+.searchbar{
+	display: inline-block;
+	padding: 5px;
+	font-family:"arial";
+	color: white;
+
+}
+#i-searchbar{
+
+	height:25px;
+	border-radius: 5px;
+	background-color: #4990DF;
+	color: white;
+	border:none;
+	outline: none;
+	text-indent: 10px;
+}
+#i-searchbar::placeholder{
+	color:rgb(255, 255, 255,.5);
+}
+#shopping-icon{
+	width: 15px;
+	height: 15px;
+}
+#Categorias{
+	margin-top: 2%;
+}
+.categorias{
+	display: block;
+	padding: 5px;
+	font-family:"arial";
+	background-color: #F7F7F7;
+	width: 250px;
+	height: 40px;
+	border: 1px #E8E8E8 solid;
+	margin-left: 10%;
+}
+.categorias a{
+	display: block;
+	height: 40px;
+	text-decoration: none;
+	color: black;
+	font-family: "arial";
+}
+#top{
+	background-color: #333333;
+	color: white;
+}
+#top div{
+	color: white;
+	font-size: 20px;
+	font-family: "Impact";
+	margin-top: 10px;
+
+}
+#top span{
+	margin-left: 40px
+}
+#menu-icon{
+	margin-left: 10px;
+	width: 17px;
+	height: 17px;
+}
+#mouse-icon{
+	margin-left: 5px;
+	width: 23px;
+	height: 23px;
+	margin-top: 5px;
+}
+#audio-icon{
+	margin-left: 5px;
+	width: 25px;
+	height: 25px;
+	margin-top: 10px;
+}
+.text-categoria-A{
+	display: block;
+	margin-top: -10%;
+	width: 110px;
+	margin-left: 17%;
+}
+.text-categoria{
+	display: block;
+	margin-top: -8%;
+	width: 110px;
+	margin-left: 17%;
+}
+.text-categoria-C{
+	display: block;
+	margin-top: -10%;
+	width: 110px;
+	margin-left: 17%;
+}
+.text-categoria-S{
+	display: block;
+	margin-top: -10%;
+	width: 110px;
+	margin-left: 17%;
+}
+#Productos-destacados{
+ 	
+	float: right;
+	width: 53%;
+	height: auto;
+	margin-right: 14%;
+	margin-top: -26.3%;
+	border-bottom: 1px #E3E3E3 solid;
+}
+#Productos-destacados p{
+	color:#9A9A9A;
+	font-family: "arial";
+	font-weight: bold;
+	font-size: 20px;
+}
+#texto-destacados{
+	margin-top: -3px;
+}
+#Envoltura-contenido{
+	height: 100%;
+	display: inline-block;
+	width: 100%;
+}
+#Productos-I{
+	float: right;
+	width: 53%;
+	height: auto;
+	margin-right: 14%;
+	margin-top: -23%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.productos-lista{
+	display: flex;
+	flex-wrap: wrap;
+}
+#Producto-1{
+	width: 200px;
+	margin-right: 40px;
+	margin-top: 50px;
+
+}
+.image-product{
+	width: 200px;
+	height: 200px;
+}
+.descripcion-producto{
+	text-decoration:none;
+	font-family: "Impact";
+	font-size: 14px;
+	color: #555;
+}
+.precio{
+	color:#3498db;
+	font-family: "Franklin Gothic Heavy"
+}
+.texto-cantidad{
+	font-family: "Impact";
+	font-size: 14px;
+	color: #9A9A9A;
+}
+
+.e-ul{
+	margin-left: -20%;
+	margin-top: -7%;
+}
+.cantidad-numero{
+	width: 40px;
+}
+.obj-cantidad{
+	display: inline-block;
+}
+
+#button-add{
+	width: 100%;
+	height: 35px;
+	color: white;
+	background-color: #666;
+	border:none;
+	outline: none;
+	cursor: pointer;
+}
+#button-add:hover{
+	background-color: #428bca;
+}
+#pie_de_pagina{
+	margin-top: 9%;
+	background-color: #202020;
+	height: 300px;
+	color: white;
+	font-family: "arial";
+	padding: 1px;
+}
+#Derechos-reservados-logo{
+	width: 60px;
+	height: auto;
+	margin:0 auto;/* Sirve para centrarlo*/
+	margin-top: -10%;
+}
+#logo-pie-de-pagina{
+	width: 60px;
+	height: 60px;
+}
+#texto-derechos-reservados{
+	margin-left: 46%;
+	font-family: "arial";
+	font-size: 12px;
+	color: #cecece;
+}
+#lista-footer{
+	width: 300px;
+	margin-top: 4%;
+	margin-left: 5%;
+	
+}
+
+.opciones-footer{
+	margin-top: 10px;
+	height: 30px;
+	border-bottom: 1px #292929 solid;
+	color:#666; /*Añade el color de los puntos de la lista*/
+}
+.opciones-footer a{
+	display: block;
+	height: 30px;
+	text-decoration: none;
+	color: #666;  /*añade el color del texto*/
+	font-size: 12px;
+}
+#important-text{
+	color: blue;
+}
+#Procesadores-de-pago{
+	margin-top: 5%;
+}
+#Procesadores-de-pago img{
+	margin-left: 23%;
+}
+.lupa{
+	width: 200px; height: 200px;
+	position: absolute;
+	border-radius: 100%;
+	
+	/*Multiple box shadows to achieve the glass effect*/
+	box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 
+	0 0 7px 7px rgba(0, 0, 0, 0.25), 
+	inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+	
+	/*Lets load up the large image first*/
+	background: url('Imagenes/Disipador1.jpg') no-repeat;
+	
+	/*hide the glass by default*/
+	display: none;
+}
+
